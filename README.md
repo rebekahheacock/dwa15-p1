@@ -7,3 +7,9 @@ This is a simple, one-page portfolio site, created as the first project for CSCI
 ## Project Details ##
 
 I'm using [Bootstrap](http://getbootstrap.com/).
+
+## TODO ##
+
+- improve responsiveness
+-- text sizing
+-- nav bar alignment/overlap with text
