@@ -11,5 +11,5 @@ I'm using [Bootstrap](http://getbootstrap.com/).
 ## TODO ##
 
 - improve responsiveness
--- text sizing
--- nav bar alignment/overlap with text
+	- text sizing
+	- nav bar alignment/overlap with text
