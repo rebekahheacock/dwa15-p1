@@ -1,0 +1,71 @@
+a {
+	color: #8C9174;
+}
+
+a:hover {
+	color: #3E222B;
+}
+
+nav a {
+	color: #8C7D82;
+}
+
+nav a:hover {
+	color: #CEC8CA;
+}
+
+.header {
+	padding-top: 30vh;
+	background: #3E222B;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: Lato;
+	font-weight: 300;
+}
+
+p {
+	font-size: 1.125em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	font-size: 10em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+
+h3 {
+	font-size: 1.5em;
+}
+
+.byline {
+	font-size: 2em;
+	color: #8C7D82;
+	font-weight: 100;
+}
+
+.row	{
+	min-height: 100vh;
+	padding-bottom: 1em;
+}
+
+.row:not(:last-child) {
+	border-bottom: 1px solid #CCC;
+}
+
+section {
+	padding-top: 50px;
+}
+
+.photo	{
+	margin-top: 20px;
+}
