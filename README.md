@@ -15,3 +15,4 @@ I'm using [Bootstrap](http://getbootstrap.com/).
 - improve responsiveness
 	- text sizing
 - review & clean up CSS
+- add footer w/contact info
