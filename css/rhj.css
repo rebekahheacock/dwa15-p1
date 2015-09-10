@@ -14,15 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 10em;
-}
-
-h2 {
-	font-size: 2.5em;
-}
-
-h3 {
-	font-size: 1.5em;
+	font-size: 11vw;
 }
 
 .byline {
@@ -79,4 +71,3 @@ nav a:hover {
 img	{
 	margin-top: 20px;
 }
-
