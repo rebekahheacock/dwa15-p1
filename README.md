@@ -13,3 +13,4 @@ I'm using [Bootstrap](http://getbootstrap.com/).
 - improve responsiveness
 	- text sizing
 	- nav bar alignment/overlap with text
+- review & clean up CSS
