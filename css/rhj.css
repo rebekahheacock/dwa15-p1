@@ -1,37 +1,9 @@
+/* TYPOGRAPHY */
+
 body {
 	font-family: Lato;
 	font-weight: 300;
 }
-
-a {
-	color: #8C9174;
-}
-
-a:hover {
-	color: #3E222B;
-}
-
-nav a {
-	color: #8C7D82;
-}
-
-nav a:hover {
-	color: #CEC8CA;
-}
-
-.row	{
-	padding-top: 50px;
-	min-height: 100vh;
-	padding-bottom: 1em;
-}
-
-.header {
-	padding-top: 30vh;
-	background: #3E222B;
-	color: #FFFFFF;
-	text-transform: uppercase;
-}
-
 
 p {
 	font-size: 1.125em;
@@ -49,7 +21,6 @@ h2 {
 	font-size: 2.5em;
 }
 
-
 h3 {
 	font-size: 1.5em;
 }
@@ -60,20 +31,52 @@ h3 {
 	font-weight: 100;
 }
 
+/* LINKS */
 
+a {
+	color: #8C9174;
+}
+
+a:hover {
+	color: #3E222B;
+}
+
+nav a {
+	color: #8C7D82;
+}
+
+nav a:hover {
+	color: #CEC8CA;
+}
+
+/* ALIGNMENT & BORDERS */
+
+.row	{
+	padding-top: 50px;
+	min-height: 100vh; /* full screen height */
+	padding-bottom: 1em;
+}
+
+/* give every row but the last one a bottom border for nice row divisions when scrolling */
 
 .row:not(:last-child) {
 	border-bottom: 1px solid #CCC;
 }
 
-/*section {
-	
-}*/
-
-.photo	{
-	margin-top: 20px;
+.header {
+	padding-top: 30vh; /* set in vh to scale with screen size */
+	background: #3E222B;
+	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .navbar-right {
 	float: right!important;
 }
+
+/* give images same top margin as h2 (used for row headers) so row contents line up nicely */
+
+img	{
+	margin-top: 20px;
+}
+
