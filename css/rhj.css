@@ -69,3 +69,7 @@ section {
 .photo	{
 	margin-top: 20px;
 }
+
+.navbar-right {
+	float: right!important;
+}
