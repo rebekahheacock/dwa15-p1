@@ -9,10 +9,3 @@ This is a simple, one-page portfolio site, created as the first project for CSCI
 ## Outside code
 
 I'm using [Bootstrap](http://getbootstrap.com/).
-
-## TODO
-
-- improve responsiveness
-	- text sizing
-- review & clean up CSS
-- add footer w/contact info
