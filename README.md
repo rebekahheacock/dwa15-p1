@@ -1,7 +1,5 @@
-This is a simple, one-page portfolio site, initially created as the first project for CSCI E-15 Dynamic Web Applications (Fall 2015).
+# Rebekah Heacock Jones
 
-## Link
-[rhjones.me](http://rhjones.me)
+Portfolio site: [rhjones.me](http://rhjones.me)
 
-## Outside code
-I'm using [Bootstrap](http://getbootstrap.com/).
+Uses [Bootstrap](http://getbootstrap.com/).
