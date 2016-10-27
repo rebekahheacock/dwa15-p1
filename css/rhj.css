@@ -1,80 +1,80 @@
 /* TYPOGRAPHY */
 
 body {
-	font-family: Lato;
-	font-weight: 300;
+  font-family: Lato;
+  font-weight: 300;
 }
 
 p {
-	font-size: 1.125em;
+  font-size: 1.125em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
-	font-size: 11vw;
+  font-size: 11vw;
 }
 
 p.links {
-	font-size: 18px;
-	color: #777;
-	font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #777;
+  font-family: 'Playfair Display', serif;
 }
 
 .byline {
-	font-size: 2em;
-	color: #8C7D82;
-	font-weight: 100;
+  font-size: 2em;
+  color: #8C7D82;
+  font-weight: 100;
 }
 
 /* LINKS */
 
 a {
-	color: #8C9174;
+  color: #8C9174;
 }
 
 a:hover {
-	color: #3E222B;
+  color: #3E222B;
 }
 
 nav a {
-	color: #8C7D82;
+  color: #8C7D82;
 }
 
 nav a:hover {
-	color: #CEC8CA;
+  color: #CEC8CA;
 }
 
 /* ALIGNMENT & BORDERS */
 
-.row	{
-	padding-top: 50px;
-	min-height: 100vh; /* full screen height */
-	padding-bottom: 1em;
+.row  {
+  padding-top: 50px;
+  min-height: 100vh; /* full screen height */
+  padding-bottom: 1em;
 }
 
 /* give every row but the last one a bottom border for nice row divisions when scrolling */
 
 .row:not(:last-child) {
-	border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
 }
 
 .header {
-	padding-top: 30vh; /* set in vh to scale with screen size */
-	background: #3E222B;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	padding-left: 0.5em;
+  padding-top: 30vh; /* set in vh to scale with screen size */
+  background: #3E222B;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-left: 0.5em;
 }
 
 .navbar-right {
-	float: right!important;
+  float: right!important;
 }
 
 /* give images same top margin as h2 (used for row headers) so row contents line up nicely */
 
-img	{
-	margin-top: 20px;
+img {
+  margin-top: 20px;
 }
