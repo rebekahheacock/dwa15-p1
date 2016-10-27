@@ -1,80 +1,100 @@
 /* TYPOGRAPHY */
-
 body {
-	font-family: Lato;
-	font-weight: 300;
-}
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
 p {
-	font-size: 1.125em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Playfair Display', serif;
-}
+  font-size: 1.125em; }
 
 h1 {
-	font-size: 11vw;
-}
+  font-size: 5vw;
+  text-transform: uppercase; }
 
 p.links {
-	font-size: 18px;
-	color: #777;
-	font-family: 'Playfair Display', serif;
-}
+  font-size: 18px;
+  color: #777;
+  font-family: "Open Sans", sans-serif; }
 
 .byline {
-	font-size: 2em;
-	color: #8C7D82;
-	font-weight: 100;
-}
+  font-size: 2vw;
+  color: #000;
+  margin-bottom: 1em; }
 
 /* LINKS */
-
 a {
-	color: #8C9174;
-}
+  color: #8C9174; }
 
 a:hover {
-	color: #3E222B;
-}
+  color: #3E222B; }
 
 nav a {
-	color: #8C7D82;
-}
+  color: #8C7D82; }
 
 nav a:hover {
-	color: #CEC8CA;
-}
+  color: #CEC8CA; }
 
 /* ALIGNMENT & BORDERS */
-
-.row	{
-	padding-top: 50px;
-	min-height: 100vh; /* full screen height */
-	padding-bottom: 1em;
-}
+.row {
+  padding-top: 50px;
+  min-height: 100vh;
+  /* full screen height */
+  padding-bottom: 1em; }
 
 /* give every row but the last one a bottom border for nice row divisions when scrolling */
-
 .row:not(:last-child) {
-	border-bottom: 1px solid #CCC;
-}
+  border-bottom: 1px solid #CCC; }
 
 .header {
-	padding-top: 30vh; /* set in vh to scale with screen size */
-	background: #3E222B;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	padding-left: 0.5em;
-}
+  padding-top: 30vh;
+  /* set in vh to scale with screen size */
+  background: #008234;
+  color: #fff;
+  text-align: center; }
 
 .navbar-right {
-	float: right!important;
-}
+  float: right !important; }
 
 /* give images same top margin as h2 (used for row headers) so row contents line up nicely */
+img {
+  margin-top: 20px; }
 
-img	{
-	margin-top: 20px;
-}
+/* CONTACT ICONS */
+.contact-icons {
+  text-align: center; }
+  .contact-icons a {
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    color: #000;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px;
+    box-shadow: none;
+    background: #fff; }
+  .contact-icons a:before {
+    font: normal 24px/1 'Genericons';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 13px; }
+  .contact-icons a:hover:before {
+    color: #008234; }
+  .contact-icons .github:before {
+    content: '\f200'; }
+  .contact-icons .linkedin:before {
+    content: '\f208'; }
+  .contact-icons .twitter:before {
+    content: '\f202'; }
+  .contact-icons .email:before {
+    content: '\f410'; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; }
+
+/*# sourceMappingURL=rhj.css.map */
