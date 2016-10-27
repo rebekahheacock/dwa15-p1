@@ -28,10 +28,10 @@ a:hover {
   color: #3E222B; }
 
 nav a {
-  color: #8C7D82; }
+  color: #fff; }
 
 nav a:hover {
-  color: #CEC8CA; }
+  color: #fff; }
 
 /* ALIGNMENT & BORDERS */
 .row {
@@ -98,25 +98,27 @@ img {
   word-wrap: normal !important; }
 
 /* NAVBAR */
-/*
- * Custom styles
- */
-.navbar-brand {
-  font-size: 24px; }
-
+/* adapted from http://bootsnipp.com/snippets/featured/navbar-fixed-on-scrolling-with-transition */
 .navbar-container {
-  padding: 20px 0 20px 0; }
+  padding: 20px 0;
+  color: #fff; }
+
+.navbar-header a#brand {
+  color: #fff; }
 
 .navbar.navbar-fixed-top.fixed-theme {
-  background-color: #222;
-  border-color: #080808;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
-
-.navbar-brand.fixed-theme {
-  font-size: 18px; }
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  color: #1a1a1a; }
+  .navbar.navbar-fixed-top.fixed-theme a {
+    color: #1a1a1a; }
+    .navbar.navbar-fixed-top.fixed-theme a:hover {
+      color: #008234; }
 
 .navbar-container.fixed-theme {
-  padding: 0; }
+  /* padding: 20px 0;*/ }
+  .navbar-container.fixed-theme a#brand {
+    color: #1a1a1a; }
 
 .navbar-brand.fixed-theme,
 .navbar-container.fixed-theme,
