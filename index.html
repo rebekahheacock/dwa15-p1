@@ -3,113 +3,292 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rebekah Heacock Jones | Developer</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Rebekah Heacock Jones | Boston-based full stack developer</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/genericons/genericons.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/devicon/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/rhj.css" >
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400%7CLato:300,100">
+	
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
+
+	<!-- nav bar from http://bootsnipp.com/snippets/featured/navbar-fixed-on-scrolling-with-transition -->
+	<nav id="header" class="navbar navbar-fixed-top">
+    <div id="header-container" class="container-fluid navbar-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="brand" href="">
+        	<span class="tiny"><strong>R</strong>HJ</span>
+        	<span class="name"><strong>Rebekah</strong>HeacockJones</span>
+        	<span class="tag"> | Boston-based full stack developer</span>
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </nav>
 	<div class="container-fluid" id="top">
-		<div class="row header">
-			<nav class="navbar-fixed-top">
-				<div class="container-fluid">
-					<ul class="navbar-right list-unstyled list-inline">
-						<li><a href="#about">About</a></li>
-						<li><a href="#top">&#8593;</a></li>
-					</ul>
-				</div>
-			</nav>
-			<h1>Rebekah <br />Heacock Jones</h1>
-			<p class="byline">developer</p>
-		</div>
-		<div class="row" id="about">
+		<div class="row header section">
+			<h1><strong>Rebekah</strong>HeacockJones</h1>
+			<p class="byline">Boston-based full stack developer</p>
+			<div class="contact-icons">
+				<a class="github" title="GitHub" href="https://rhjones.github.com"><span class="screen-reader-text">GitHub</span></a>
+				<a class="twitter" title="Twitter" href="https://twitter.com/rebekahredux"><span class="screen-reader-text">Twitter</span></a>
+				<a class="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/rebekahheacockjones"><span class="screen-reader-text">Linked In</span></a>
+				<a class="blog" title="My blog" href="http://rebekahheacock.org"><span class="screen-reader-text">Blog</span></a>
+				<a class="resume" title="My resume" href="RHJ_resume.pdf"><span class="screen-reader-text">Resume</span></a>
+				<a class="email" title="Email me" href="mailto:hello@rhjones.me"><span class="screen-reader-text">Email</span></a>
+			</div>
+		</div><!-- /.row header section -->
+		<div class="row section" id="about">
 			<div class="col-sm-4">
-				<img src="img/rhj.png" alt="Rebekah Heacock Jones" class="img-responsive center-block">
+				<div class="img-wrapper"><img src="img/rhj.jpg" alt="Rebekah Heacock Jones" class="img-responsive img-circle center-block"></div>
 			</div>
 			<div class="col-sm-8">
 				<h2>Hello, there. I'm Rebekah.</h2>
-				
-				<p>I'm a developer. I'm happiest when writing code, and I'm constantly working to get better at it.</p>
 
-				<p>I started programming in Applesoft BASIC on my parents' Apple IIe when I was six. Since then, I've built a campaign website for a Nigerian presidential candidate, a <a href="#summiteer">personal hike tracker</a>, a <a href="#gobag">packing list app for frequent travelers</a>, and lots of other things. I'm currently in training at General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> program and working as a teaching assistant for the Harvard Extension School's <a href="http://dwa15.com">Dynamic Web Applications</a> class.</p>
+				<p class="lead">I'm happiest when writing code, and I'm constantly working to get better at it.</p>
 
-				<p>More about <a href="http://rebekahheacock.org/about/">me</a> and <a href="http://rebekahheacock.org/my-work/">my work</a> are on my blog at <a href="http://rebekahheacock.org/">rebekahheacock.org</a>.</p>
+				<p>I wrote my first line of code when I was six. Printing "HELLO WORLD" to the screen of my parents' Apple IIE felt like unlocking a secret door, and I've been chasing that feeling ever since. Throughout my career as a project manager, a technical trainer, and a web producer, I've looked for opportunities to code, and I recently took plunge into full-time programming.</p>
 
-				<p>Download my resume: <a href="RHJ_resume.pdf">PDF</a></p>
+				<p>I'm constantly working to hone my craft—breaking large problems down into individual parts, understanding what makes up each component, and improving my ability to fit it all back together in a more elegant, efficient way each time. Along the way, I've built a campaign website for a Nigerian presidential candidate, a fantasy football app for weddings, a <a href="#summiteer">personal hike tracker</a>, a <a href="#gobag">packing list app for frequent travelers</a>, and lots of other things.</p>
 
-				<p>github: <a href="https://github.com/rhjones/">rhjones</a> | twitter: <a href="https://twitter.com/rebekahredux">@rebekahredux</a> | email: hello@rhjones.me</p>
-			</div>
-		</div>
-		<div class="row" id="gobag">
-			<div class="col-sm-4">
-				<a href="https://rhjones.github.io/go-bag/"><img src="img/gobag.png" alt="Go Bag" class="img-responsive center-block"></a>
-			</div>
-			<div class="col-sm-8">
-				<h2>Go Bag <small>Packing lists for frequent travelers</small></h2>
-				<p class="links"><a href="https://rhjones.github.io/go-bag/">view</a> / <a href="https://github.com/rhjones/go-bag">github (client)</a> / <a href="https://github.com/rhjones/go-bag-api">github (api)</a></p>
-				<p>Go Bag lets frequent travelers save their packing lists, whether for once-in-a-lifetime adventures or monthly business trips. Users can add and delete items, search through a database of common travel necessities, check off items as they pack for an upcoming trip, and clone, edit, and delete lists depending on their travel schedule. Go Bag's client-facing application is built in JavaScript/jQuery, HTML5, and SCSS; the API is built in Rails.</p>
+				<p>I'm currently in training at General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> program and working as a teaching assistant for the Harvard Extension School's <a href="http://dwa15.com">Dynamic Web Applications</a> class. More about <a href="http://rebekahheacock.org/about/">me</a> and <a href="http://rebekahheacock.org/my-work/">my work</a> are on my blog at <a href="http://rebekahheacock.org/">rebekahheacock.org</a>.</p>
 
-				<p>Curious how I built this? Read my <a href="http://rebekahheacock.org/2016/10/go-bag/">development log.</a></p>
+				<div class="contact-icons">
+					<a class="github" title="GitHub" href="https://rhjones.github.com"><span class="screen-reader-text">GitHub</span></a>
+					<a class="twitter" title="Twitter" href="https://twitter.com/rebekahredux"><span class="screen-reader-text">Twitter</span></a>
+					<a class="linkedin" title="LinkedIn" href="https://www.linkedin.com/in/rebekahheacockjones"><span class="screen-reader-text">Linked In</span></a>
+					<a class="blog" title="My blog" href="http://rebekahheacock.org"><span class="screen-reader-text">Blog</span></a>
+					<a class="resume" title="My resume" href="RHJ_resume.pdf"><span class="screen-reader-text">Resume</span></a>
+					<a class="email" title="Email me" href="mailto:hello@rhjones.me"><span class="screen-reader-text">Email</span></a>
+					
+				</div>
 			</div>
-		</div>
-		<div class="row" id="summiteer">
-			<div class="col-sm-4">
-				<a href="http://p4.rhjones.me"><img src="img/p4.png" alt="Project Summiteer" class="img-responsive center-block"></a>
-			</div>
-			<div class="col-sm-8">
-				<h2>Summiteer <small>Remember every step</small></h2>
-				<p class="links"><a href="http://summiteer.rhjones.me/">view</a> / <a href="https://github.com/rhjones/summiteer">github</a></p>
-				<p>I built Summitteer to help track my attempt to hike all 48 4000-foot peaks in New Hampshire’s White Mountains. Summiteer allows users to track which peaks they’ve climbed and when, mileage, and notes on things like gear, companions, trail(s) used, weather, and trail conditions. Built in Laravel/PHP.</p>
-			</div>
-		</div>
-		<div class="row" id="tictactoe">
-			<div class="col-sm-4">
-				<a href="https://rhjones.github.io/tic-tac-toe/"><img src="img/tictactoe.png" alt="Tic Tac Toe" class="img-responsive center-block"></a>
-			</div>
-			<div class="col-sm-8">
-				<h2>Tic Tac Toe <small>Dots Edition</small></h2>
-				<p class="links"><a href="https://rhjones.github.io/tic-tac-toe/">view</a> / <a href="https://github.com/rhjones/tic-tac-toe">github</a></p>
-				<p>This version of Tic Tac Toe is inspired by the <a href="https://www.dots.co/">Dots.co</a> family of mobile games. A single-page application written in JavaScript/jQuery/HTML5/SCSS, the game relies on a Rails API that provides user authentication and game data storage.</p>
-				<p>Curious how I built this? Check out my <a href="http://rebekahheacock.org/2016/09/general-assembly-week-3-project-week/">lessons learned</a>.
-			</div>
-		</div>
-		<div class="row" id="dplaimages">
-			<div class="col-sm-4">
-				<a href="http://dplaimages.rhjones.me"><img src="img/dplaimages.png" alt="DPLA Images" class="img-responsive center-block"></a>
-			</div>
-			<div class="col-sm-8">
-				<h2>DPLA Images <small>All the pretty pictures</small></h2>
-				<p class="links"><a href="http://dplaimages.rhjones.me">view</a> / <a href="https://github.com/rhjones/dpla-images">github</a> / <a href="https://dp.la/apps/40">dpla app library</a></p>
-				<p>DPLA Images offers a clean, straightforward user interface for searching for images from the <a href="http://dp.la" title="Digital Public Library of America">Digital Public Library of America</a> (DPLA), a collection of over 13 million cultural heritage objects from libraries, archives, and museums across the country. Users can enter a search phrase or choose to be surprised by set of images on a random topic.</p>
+		</div><!-- /.row section #about -->
+		<div class="row section" id="skills">
+			<div class="col-sm-12">
+			<h2>Skills</h2>
+				<h3>most experience</h3>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-javascript-plain colored"></i>
+					  <p>JavaScript</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-jquery-plain colored"></i>
+					  <p>jQuery</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-php-plain colored"></i>
+					  <p>PHP</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-laravel-plain colored"></i>
+					  <p>Laravel</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-mysql-plain colored"></i>
+					  <p>MySQL</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-postgresql-plain colored"></i>
+					  <p>PostgreSQL</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-git-plain colored"></i>
+					  <p>Git</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-html5-plain colored"></i>
+					  <p>HTML5</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-css3-plain colored"></i>
+					  <p>CSS3</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-sass-original colored"></i>
+					  <p>SASS</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-bootstrap-plain colored"></i>
+					  <p>Bootstrap</p>
+					</div>
+				</div>
 
-				<p>Featured in the <a href="https://dp.la/apps/40">DPLA App Library</a>. Built in JavaScript/jQuery/HTML5/CSS.</p> 
+				<h3>working knowledge</h3>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-ruby-plain colored"></i>
+					  <p>Ruby</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-rails-plain colored"></i>
+					  <p>Rails</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-nodejs-plain colored"></i>
+					  <p>nodeJS & Express</p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 skill">
+					  <i class="devicon-mongodb-plain colored"></i>
+					  <p>MongoDB & Mongoose</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="row" id="dbf">
-			<div class="col-sm-4">
-				<a href="http://p3.rhjones.me"><img src="img/p3.png" alt="Developer's Best Friend" class="img-responsive center-block"></a>
+		</div><!-- /.row section #skills" -->
+		<div id="portfolio">
+			<div class="row section">
+				<h2>Portfolio</h2>
+				<div class="row">
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#gobag">
+		            <img class="img-responsive" src="img/gobag.png" alt="Go Bag">
+		          </a>
+		          <span class="description">Rails, PostgreSQL, JavaScript, jQuery</span>
+		        </div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#happening">
+		            <img class="img-responsive" src="img/happening.png" alt="Happening" />
+		          </a>
+		          <span class="description">Express, MongoDB, Mongoose, JavaScript, jQuery</span>
+		        </div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#summiteer">
+		            <img class="img-responsive" src="img/summiteer.png" alt="Summiteer" />
+		          </a>
+		          <span class="description">Laravel, MySQL</span>
+		        </div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#tictactoe">
+		            <img class="img-responsive" src="img/tictactoe.png" alt="Tic Tac Toe" />
+		          </a>
+		          <span class="description">JavaScript, jQuery</span>
+		        </div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#dbf">
+		            <img class="img-responsive" src="img/dbf.png" alt="Developer's Best Friend" />
+		          </a>
+		          <span class="description">Laravel</span>
+		        </div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="project">
+		          <a href="#xkcdpwd">
+		            <img class="img-responsive" src="img/xkcdpwd.png" alt="xkcd Password Generator" />
+		          </a>
+		          <span class="description">PHP</span>
+		        </div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-8">
-				<h2>Developer's Best Friend <small>Generate all the things</small></h2>
-				<p class="links"><a href="http://p3.rhjones.me">view</a> / <a href="https://github.com/rhjones/dwa15-p3">github</a></p>
-				<p>This Laravel/PHP project generates three helpful resources for web developers: up to 10 paragraphs of lorem ipsum text, up to 10 random users (including a name, username, and email address, and an optional mailing address, phone number, birthday, profile description, and profile photo), and an XKCD-style password.</p>
+
+			<div class="row section project-details" id="gobag">
+				<div class="col-sm-4">
+					<a href="https://rhjones.github.io/go-bag/"><img src="img/gobag.png" alt="Go Bag" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>Go Bag <small>Packing lists for frequent travelers</small></h2>
+					<p class="links"><a href="https://rhjones.github.io/go-bag/">view</a> / <a href="https://github.com/rhjones/go-bag">github (client)</a> / <a href="https://github.com/rhjones/go-bag-api">github (api)</a></p>
+					<p>Go Bag lets frequent travelers save their packing lists, whether for once-in-a-lifetime adventures or monthly business trips. Users can add and delete items, search through a database of common travel necessities, check off items as they pack for an upcoming trip, and clone, edit, and delete lists depending on their travel schedule. Go Bag's client-facing application is built in JavaScript/jQuery, HTML5, and SCSS; the API is built in Rails and relies on a PostgreSQL database.</p>
+
+					<p>Curious how I built this? Read my <a href="http://rebekahheacock.org/2016/10/go-bag/">development log.</a></p>
+				</div>
 			</div>
-		</div>
-		<div class="row" id="pwdgen">
-			<div class="col-sm-4">
-				<a href="http://p2.rhjones.me"><img src="img/p2.png" alt="xkcd Password Generator" class="img-responsive center-block"></a>
+			<div class="row section project-details" id="happening">
+				<div class="col-sm-4">
+					<a href="https://the-spectacles.github.io/event-planner/"><img src="img/happening.png" alt="Happening" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>Happening <small>Online invitations for events big and small</small></h2>
+					<p class="links"><a href="https://the-spectacles.github.io/event-planner/">view</a> / <a href="https://github.com/the-spectacles/event-planner">github (client)</a> / <a href="https://github.com/the-spectacles/event-planner-api">github (api)</a></p>
+					<p>Happening is online invitation tool that lets you manage your event-related correspondence with ease. Happening's API is built in Express and relies on MongoDB/Mongoose. The client-facing application is build in JavaScript/jQuery, HTML5, and SCSS. Happening was built in collaboration with <a href="https://github.com/styletabtech">@styletabtech</a> and <a href="https://github.com/JaimeGaribaldo7">@JaimeGaribaldo7</a>.</p>
+				</div>
 			</div>
-			<div class="col-sm-8">
-				<h2>xkcd Password Generator <small>Remember words, not gibberish</small></h2>
-				<p class="links"><a href="http://p2.rhjones.me">view</a> / <a href="https://github.com/rhjones/dwa15-p2">github</a></p>
-				<p>This PHP-based project generates a string of words, plus an optional number and/or symbol, to serve as a more easily memorable password. The generator takes as inputs a number of words, whether or not to include a number and/or symbol, and a preferred word separator.</p>
-				<p>Options include "memorable mode," which outputs a string consisting of an adjective, noun, verb, and adverb for a "grammatically correct" password, and "dinosaur mode," which outputs a password containing a dinosaur.</p>
+			<div class="row section project-details" id="summiteer">
+				<div class="col-sm-4">
+					<a href="http://summiteer.rebekah.me"><img src="img/summiteer.png" alt="Summiteer" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>Summiteer <small>Remember every step</small></h2>
+					<p class="links"><a href="http://summiteer.rebekah.me">view</a> / <a href="https://github.com/rhjones/summiteer">github</a></p>
+					<p>I built Summiteer to help track my attempt to hike all 48 4000-foot peaks in New Hampshire’s White Mountains. Summiteer allows users to track which peaks they’ve climbed and when, mileage, and notes on things like gear, companions, trail(s) used, weather, and trail conditions. Built in Laravel/PHP.</p>
+				</div>
 			</div>
-		</div>
+			<div class="row section project-details" id="tictactoe">
+				<div class="col-sm-4">
+					<a href="https://rhjones.github.io/tic-tac-toe/"><img src="img/tictactoe.png" alt="Tic Tac Toe" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>Tic Tac Toe <small>Dots Edition</small></h2>
+					<p class="links"><a href="https://rhjones.github.io/tic-tac-toe/">view</a> / <a href="https://github.com/rhjones/tic-tac-toe">github</a></p>
+					<p>This version of Tic Tac Toe is inspired by the <a href="https://www.dots.co/">Dots.co</a> family of mobile games. A single-page application written in JavaScript/jQuery/HTML5/SCSS, the game relies on a Rails API that provides user authentication and game data storage.</p>
+					<p>Curious how I built this? Check out my <a href="http://rebekahheacock.org/2016/09/general-assembly-week-3-project-week/">lessons learned</a>.
+				</div>
+			</div>
+			<div class="row section project-details" id="dplaimages">
+				<div class="col-sm-4">
+					<a href="http://dplaimages.rhjones.me"><img src="img/dplaimages.png" alt="DPLA Images" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>DPLA Images <small>All the pretty pictures</small></h2>
+					<p class="links"><a href="http://dplaimages.rhjones.me">view</a> / <a href="https://github.com/rhjones/dpla-images">github</a> / <a href="https://dp.la/apps/40">dpla app library</a></p>
+					<p>DPLA Images offers a clean, straightforward user interface for searching for images from the <a href="http://dp.la" title="Digital Public Library of America">Digital Public Library of America</a> (DPLA), a collection of over 13 million cultural heritage objects from libraries, archives, and museums across the country. Users can enter a search phrase or choose to be surprised by set of images on a random topic.</p>
+
+					<p>Featured in the <a href="https://dp.la/apps/40">DPLA App Library</a>. Built in JavaScript/jQuery/HTML5/CSS.</p> 
+				</div>
+			</div>
+			<div class="row section project-details" id="dbf">
+				<div class="col-sm-4">
+					<a href="http://developersbestfriend.rhjones.me"><img src="img/dbf.png" alt="Developer's Best Friend" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>Developer's Best Friend <small>Generate all the things</small></h2>
+					<p class="links"><a href="http://p3.rhjones.me">view</a> / <a href="https://github.com/rhjones/dwa15-p3">github</a></p>
+					<p>This Laravel/PHP project generates three helpful resources for web developers: up to 10 paragraphs of lorem ipsum text, up to 10 random users (including a name, username, and email address, and an optional mailing address, phone number, birthday, profile description, and profile photo), and an XKCD-style password.</p>
+				</div>
+			</div>
+			<div class="row section project-details" id="xkcdpwd">
+				<div class="col-sm-4">
+					<a href="http://password.rhjones.me"><img src="img/xkcdpwd.png" alt="xkcd Password Generator" class="img-responsive center-block"></a>
+				</div>
+				<div class="col-sm-8">
+					<h2>xkcd Password Generator <small>Remember words, not gibberish</small></h2>
+					<p class="links"><a href="http://p2.rhjones.me">view</a> / <a href="https://github.com/rhjones/dwa15-p2">github</a></p>
+					<p>This PHP-based project generates a string of words, plus an optional number and/or symbol, to serve as a more easily memorable password. The generator takes as inputs a number of words, whether or not to include a number and/or symbol, and a preferred word separator.</p>
+					<p>Options include "memorable mode," which outputs a string consisting of an adjective, noun, verb, and adverb for a "grammatically correct" password, and "dinosaur mode," which outputs a password containing a dinosaur.</p>
+				</div>
+			</div>
+		</div><!-- /#portfolio -->
 		
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/rhj.js"></script>
 </body>
 </html>
