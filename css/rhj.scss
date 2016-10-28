@@ -2,6 +2,7 @@ $fontfamily: 'Open Sans', sans-serif;
 $fontweight: 300;
 
 $green: #008234;
+$medgreen: #1f8f4a;
 $white: #fff;
 $black: #000;
 $lightgray: #d1d1d1;
@@ -17,6 +18,7 @@ $transparentgray: rgba(80, 80, 80, 0.9);
 body {
   font-family: $fontfamily;
   font-weight: $fontweight;
+  position: relative;
 }
 
 p {
@@ -24,9 +26,15 @@ p {
   line-height: 1.6em;
 }
 
-h1 {
+h1,
+.email-big {
   font-size: 5vw;
   text-transform: uppercase;
+}
+
+.email-big {
+  color: $green;
+  text-align: center;
 }
 
 h2,
@@ -44,7 +52,7 @@ h3 {
 
 .byline {
   font-size: 3vw;
-  color: $black;
+  color: $white;
   margin-bottom: 1em;
 }
 
@@ -91,10 +99,16 @@ nav a:active {
 
 .header {
   padding-top: 30vh; /* set in vh to scale with screen size */
-  background: $green;
+  background:  url('../img/appleiie.jpg') no-repeat $medgreen;
+  background-size: 100% auto;
+  background-position: 50% 50%;
   color: $white;
   text-align: center;
+}
 
+.img-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 #about,
@@ -182,31 +196,37 @@ img {
   float: right!important;
 }
 
-.tiny {
-  display: inline;
-  color: $green;
-}
+.navbar-brand {
+  .tiny {
+    display: none;
+    color: $green;
+  }
 
-.name {
-  display: none;
-}
+  .name {
+    display: none;
+  }
 
-.tag {
-  display: none;
+  .tag {
+    display: none;
+  }
 }
 
 @media (min-width: 375px) {
-  .tiny {
-    display: none;
-  }
-  .name {
-    display: inline;
+  .navbar-brand {
+    .tiny {
+      display: none;
+    }
+    .name {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 860px) {
-  .tag {
-    display: inline;
+  .navbar-brand {
+    .tag {
+      display: none;
+    }
   }
 }
 
@@ -222,19 +242,29 @@ img {
     color: $white;
 }
 
-nav a {
-  color: $white;
-  box-shadow: none;
+.nav>li>a,
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:visited {
+  background: none;
+  padding: 0;
 }
 
-nav a:hover {
+.nav>li>a {
   color: $white;
-  box-shadow: 0 1px 0 0 $white;
+  box-shadow: none;
+
+  &:hover {
+    color: $white;
+    box-shadow: 0 1px 0 0 $white;
+  }
 }
 
 .navbar-header a#brand {
   color: $green;
   font-weight: 300;
+  box-shadow: none;
 
   .name {
     text-transform: uppercase;
@@ -258,16 +288,23 @@ nav a:hover {
     border-bottom: 1px solid $verylightgray;
     color: $green;
 
-    a {
-      color: $verydarkgray;
-
-      &:hover {
+    li.active a {
         color: $green;
         box-shadow: 0 1px 0 0 $green;
-      }
+    }
 
-      &#brand {
-        box-shadow: none;
+    li {
+      a {
+        color: $verydarkgray;
+
+        &:hover {
+          color: $green;
+          box-shadow: 0 1px 0 0 $green;
+        }
+
+        &#brand {
+          box-shadow: none;
+        }
       }
     }
 
@@ -278,20 +315,49 @@ nav a:hover {
 }
 
 .navbar {
-  background: $green;
+  background: $medgreen;
 }
 
-.navbar-container.fixed-theme {
-   /* padding: 20px 0;*/
+.navbar-brand.fixed-theme {
+  a#brand {
+    color: $verydarkgray;
 
-    a#brand {
-      color: $verydarkgray;
-
-      .name {
-        color: $green;
-      }
+    .name {
+      color: $green;
     }
+  }
 
+  .tiny {
+    display: inline;
+    color: $green;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .tag {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar-brand.fixed-theme {
+    .tiny {
+      display: none;
+    }
+    .name {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: 860px) {
+  .navbar-brand.fixed-theme {
+    .tag {
+      display: inline;
+    }
+  }
 }
 
 .navbar-brand.fixed-theme,
