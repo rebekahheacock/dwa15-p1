@@ -60,6 +60,27 @@ h3 {
   margin-top: 20px;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+
+  &>.navbar-collapse {
+    margin-right: 15px;
+  }
+
+  &>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 /* LINKS */
 
 a {
@@ -194,9 +215,21 @@ img {
 
 .navbar-right {
   float: right!important;
+
+  li {
+    padding: 15px;
+    display: block;
+    text-align: right;
+    line-height: 20px;
+  }
 }
 
 .navbar-brand {
+
+  height: 30px;
+  padding: 15px;
+  line-height: 20px;
+
   .tiny {
     display: none;
     color: $green;
@@ -230,15 +263,7 @@ img {
   }
 }
 
-.navbar {
-  font-size: 16px;
-  font-weight: bold;
-  min-height: 30px;
-  line-height: 1;
-}
-
 .navbar-container {
-    padding-top: 7px;
     color: $white;
 }
 
@@ -262,25 +287,17 @@ img {
 }
 
 .navbar-header a#brand {
-  color: $green;
-  font-weight: 300;
-  box-shadow: none;
+    color: $green;
+    font-weight: 300;
+    box-shadow: none;
 
-  .name {
-    text-transform: uppercase;
+    .name {
+      text-transform: uppercase;
+    }
   }
-}
 
 .navbar-toggle .icon-bar {
   background-color: $white;
-}
-
-.navbar-right li {
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  display: block;
-  text-align: right;
 }
 
 .navbar.navbar-fixed-top.fixed-theme {
@@ -316,6 +333,7 @@ img {
 
 .navbar {
   background: $medgreen;
+  font-weight: bold;
 }
 
 .navbar-brand.fixed-theme {
