@@ -28,7 +28,7 @@ p {
 
 h1,
 .email-big {
-  font-size: 5vw;
+  font-size: 7vw;
   text-transform: uppercase;
 }
 
@@ -51,9 +51,8 @@ h3 {
 }
 
 .byline {
-  font-size: 3vw;
+  font-size: 5vw;
   color: $white;
-  margin-bottom: 1em;
 }
 
 .lead {
@@ -65,19 +64,14 @@ h3 {
   margin-left: 0;
 }
 
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-
-  &>.navbar-collapse {
-    margin-right: 15px;
+@media (min-width: 768px) {
+  h1,
+  .email-big {
+    font-size: 5vw;
   }
 
-  &>.navbar-header {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 15px;
-    padding-left: 15px;
+  .byline {
+    font-size: 3vw;
   }
 }
 
@@ -150,6 +144,12 @@ img {
 
 .contact-icons {
   text-align: center;
+  margin-top: 30px;
+
+  &.contact-footer {
+    padding-top: 20px;
+    border-top: 1px solid #CCC;
+  }
 
   a {
     border: 1px solid $lightgray;
@@ -210,8 +210,40 @@ img {
   word-wrap: normal !important;
 }
 
+@media (max-width: 320px) {
+  .contact-icons a {
+    height: 38px;
+    width: 38px;
+
+    &:before {
+      font-size: 18px;
+      top: 10px;
+    }
+  }
+}
+
 /* NAVBAR */
 /* adapted from http://bootsnipp.com/snippets/featured/navbar-fixed-on-scrolling-with-transition */
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+
+  &>.navbar-collapse {
+    margin-right: 15px;
+  }
+
+  &>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.nav>li>a {
+  display: inline;
+}
 
 .navbar-right {
   float: right!important;
