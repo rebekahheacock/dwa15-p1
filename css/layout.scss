@@ -1,0 +1,47 @@
+body {
+  color: $verydarkgray;
+  font-family: $fontfamily;
+  font-weight: $fontweight;
+  position: relative;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section {
+  min-height: 100vh; // full screen height
+  padding-bottom: 1em;
+  padding-top: 80px;
+}
+
+// give every row but the last one a bottom border for nice row divisions when scrolling
+.section:not(:last-child) {
+  border-bottom: 1px solid $gray;
+}
+
+.header {
+  background: url('../img/appleiie.jpg') no-repeat $medgreen;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  color: $white;
+  padding-top: 30vh; // set in vh to scale with screen size
+  text-align: center;
+}
+
+.img-wrapper {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+// give images same top margin as h2 (used for row headers) so row contents line up nicely
+img {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .img-wrapper {
+    max-width: 80%;
+  }
+}

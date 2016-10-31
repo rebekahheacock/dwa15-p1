@@ -1,0 +1,203 @@
+// NAVBAR
+// adapted from http://bootsnipp.com/snippets/featured/navbar-fixed-on-scrolling-with-transition
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+
+  >.navbar-collapse {
+    margin-right: 15px;
+  }
+
+  >.navbar-header {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.nav>li>a {
+  box-shadow: none;
+  color: $white;
+  display: inline;
+
+  &:hover {
+    box-shadow: 0 1px 0 0 $white;
+    color: $white;
+  }
+}
+
+
+.navbar-right {
+  float: right;
+
+  li {
+    display: block;
+    line-height: 20px;
+    padding: 15px;
+    text-align: right;
+  }
+}
+
+.navbar-brand {
+  height: 30px;
+  line-height: 20px;
+  padding: 15px;
+
+  .tiny {
+    color: $green;
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .tag {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) {
+  .navbar-brand {
+    .tiny {
+      display: none;
+    }
+
+    .name {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 860px) {
+  .navbar-brand {
+    .tag {
+      display: none;
+    }
+  }
+}
+
+.navbar-container {
+  color: $white;
+}
+
+.nav>li>a,
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav>li>a:active,
+.nav>li>a:visited {
+  background: none;
+  padding: 0;
+}
+
+.navbar-header a#brand {
+  box-shadow: none;
+  color: $green;
+  font-weight: 300;
+
+  .name {
+    text-transform: uppercase;
+  }
+}
+
+.navbar-toggle .icon-bar {
+  background-color: $white;
+}
+
+.navbar {
+  background: $medgreen;
+  font-weight: bold;
+}
+
+.navbar-fixed-top.fixed-theme {
+  background-color: $white;
+  border-bottom: 1px solid $verylightgray;
+  color: $green;
+
+  #brand {
+    box-shadow: none;
+  }
+
+  li {
+
+    &.active a {
+      box-shadow: 0 1px 0 0 $green;
+      color: $green;
+    }
+
+    a {
+      color: $verydarkgray;
+
+      &:hover {
+        box-shadow: 0 1px 0 0 $green;
+        color: $green;
+      }
+    }
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: $verydarkgray;
+  }
+
+}
+
+.navbar-brand.fixed-theme {
+  a#brand {
+    color: $verydarkgray;
+
+    .name {
+      color: $green;
+    }
+  }
+
+  .tiny {
+    color: $green;
+    display: inline;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .tag {
+    display: none;
+  }
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+  transition: .8s;
+}
+
+@media (min-width: 375px) {
+  .navbar-brand.fixed-theme {
+    .tiny {
+      display: none;
+    }
+
+    .name {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar li {
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 860px) {
+  .navbar-brand.fixed-theme {
+    .tag {
+      display: inline;
+    }
+  }
+}
+

@@ -1,0 +1,56 @@
+p {
+  font-size: $font-size;
+  line-height: 1.6em;
+}
+
+h1,
+.email-big {
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.email-big {
+  color: $green;
+  text-align: center;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.byline {
+  color: $white;
+  font-size: 5vw;
+}
+
+.lead {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  h1,
+  .email-big {
+    font-size: 5vw;
+  }
+
+  .byline {
+    font-size: 3vw;
+  }
+}
+
+#about,
+.project-details {
+  h2 {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}

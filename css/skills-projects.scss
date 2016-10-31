@@ -1,0 +1,33 @@
+// SKILLS
+
+.skill {
+  text-align: center;
+
+  i {
+    font-size: 50px;
+  }
+}
+
+// PORTFOLIO
+
+.project {
+  margin: 0 auto 2em;
+  max-width: 90%;
+  position: relative;
+  text-align: center;
+
+  .description {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto .5em;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+      transition: .5s;
+    }
+  }
+}

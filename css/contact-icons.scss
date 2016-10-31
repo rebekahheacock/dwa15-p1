@@ -1,0 +1,79 @@
+.contact-icons {
+  margin-top: 30px;
+  text-align: center;
+
+  &.contact-footer {
+    border-top: 1px solid $gray;
+    padding: 20px 0;
+  }
+
+  a {
+    background: $white;
+    border: 1px solid $lightgray;
+    border-radius: 50%;
+    box-shadow: none;
+    color: $black;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px;
+  }
+
+  a::before {
+    display: inline-block;
+    font: normal 24px/1 'Genericons';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    top: 13px;
+  }
+
+  a:hover::before {
+    color: $green;
+  }
+
+  .github::before {
+    content: '\f200';
+  }
+
+  .linkedin::before {
+    content: '\f208';
+  }
+
+  .twitter::before {
+    content: '\f202';
+  }
+
+  .email::before {
+    content: '\f410';
+  }
+
+  .blog::before {
+    content: '\f413';
+  }
+
+  .resume::before {
+    content: '\f443';
+  }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+}
+
+@media (max-width: 320px) {
+  .contact-icons a {
+    height: 38px;
+    width: 38px;
+
+    &::before {
+      font-size: 18px;
+      top: 10px;
+    }
+  }
+}
