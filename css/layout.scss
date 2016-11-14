@@ -17,8 +17,13 @@ body {
 }
 
 // give every row but the last one a bottom border for nice row divisions when scrolling
+.project-details:not(:last-child),
 .section:not(:last-child) {
   border-bottom: 1px solid $gray;
+}
+
+.project-details {
+  padding: 80px 0;
 }
 
 .header {

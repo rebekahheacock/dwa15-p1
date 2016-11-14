@@ -13,8 +13,12 @@ body {
   padding-bottom: 1em;
   padding-top: 80px; }
 
+.project-details:not(:last-child),
 .section:not(:last-child) {
   border-bottom: 1px solid #ccc; }
+
+.project-details {
+  padding: 80px 0; }
 
 .header {
   background: url("../img/appleiie.jpg") no-repeat #1f8f4a;
