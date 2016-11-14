@@ -1,5 +1,8 @@
 # Rebekah Heacock Jones
 
+Boston-based full stack web developer
+
 Portfolio site: [rhjones.me](http://rhjones.me)
 
-Uses [Bootstrap](http://getbootstrap.com/).
+Resume: [pdf](https://github.com/rhjones/rhj/blob/master/RHJ_resume.pdf)
+
