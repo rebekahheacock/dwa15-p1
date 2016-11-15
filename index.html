@@ -158,39 +158,49 @@
 			<div class="row section">
 				<h2>Portfolio</h2>
 				<div class="row">
-					<div class="col-sm-6 col-lg-4">
+					<div class="col-sm-6">
+						<div class="project">
+							<a href="#quiltr">
+			            <img class="img-responsive" src="img/quiltr.png" alt="Quiltr">
+			          </a>
+			          <span class="description">Ruby/Rails, PostgreSQL, Ember, JavaScript/jQuery</span>
+						</div>
+					</div>
+					<div class="col-sm-6">
 						<div class="project">
 		          <a href="#gobag">
 		            <img class="img-responsive" src="img/gobag.png" alt="Go Bag">
 		          </a>
-		          <span class="description">Rails, PostgreSQL, JavaScript, jQuery</span>
+		          <span class="description">Ruby/Rails, PostgreSQL, JavaScript/jQuery</span>
 		        </div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-lg-4">
 						<div class="project">
 		          <a href="#happening">
 		            <img class="img-responsive" src="img/happening.png" alt="Happening" />
 		          </a>
-		          <span class="description">Express, MongoDB, Mongoose, JavaScript, jQuery</span>
+		          <span class="description">Express, MongoDB, Mongoose, JavaScript/jQuery</span>
 		        </div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
+					<div class="col-sm-4 col-lg-4">
 						<div class="project">
 		          <a href="#summiteer">
 		            <img class="img-responsive" src="img/summiteer.png" alt="Summiteer" />
 		          </a>
-		          <span class="description">Laravel, MySQL</span>
+		          <span class="description">PHP/Laravel, MySQL</span>
 		        </div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
+					<div class="col-sm-4 col-lg-4">
 						<div class="project">
 		          <a href="#tictactoe">
 		            <img class="img-responsive" src="img/tictactoe.png" alt="Tic Tac Toe" />
 		          </a>
-		          <span class="description">JavaScript, jQuery</span>
+		          <span class="description">JavaScript/jQuery</span>
 		        </div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
+					<!-- <div class="col-sm-6 col-lg-4">
 						<div class="project">
 		          <a href="#dbf">
 		            <img class="img-responsive" src="img/dbf.png" alt="Developer's Best Friend" />
@@ -205,9 +215,20 @@
 		          </a>
 		          <span class="description">PHP</span>
 		        </div>
-					</div>
+					</div> -->
 				</div>
 			</div>
+
+      <div class="row project-details" id="quiltr">
+        <div class="col-sm-4">
+          <a href="https://rhjones.github.io/quiltr/"><img src="img/quiltr.png" alt="Quiltr" class="img-responsive center-block"></a>
+        </div>
+        <div class="col-sm-8">
+          <h2>Quiltr <small>Create patterns. Make quilts. Be inspired.</small></h2>
+          <p class="links"><a href="https://rhjones.github.io/quiltr/">view</a> / <a href="https://github.com/rhjones/quiltr">github (client)</a> / <a href="https://github.com/rhjones/quiltr-api">github (api)</a></p>
+          <p>Quiltr lets users generate random geometric quilt patterns in a range of sizes and color schemes. Users can save patterns to their "favorites" and browse a gallery of all patterns on the site. Users can also create projects based on these patterns and share their notes about and photos of each project. Quiltr is built in Ember and relies on a Rails API/Postgres to persist data. The pattern generator uses Fabric.js to draw objects on an HTML5 canvas and export the pattern as an SVG string.</p>
+        </div>
+      </div>
 
 			<div class="row project-details" id="gobag">
 				<div class="col-sm-4">
@@ -215,19 +236,19 @@
 				</div>
 				<div class="col-sm-8">
 					<h2>Go Bag <small>Packing lists for frequent travelers</small></h2>
-					<p class="links"><a href="https://rhjones.github.io/go-bag/">view</a> / <a href="https://github.com/rhjones/go-bag">github (client)</a> / <a href="https://github.com/rhjones/go-bag-api">github (api)</a></p>
+					<p class="links"><a href="https://rhjones.github.io/go-bag/">view</a> / <a href="https://github.com/rhjones/go-bag">github (client)</a> / <a href="https://github.com/rhjones/go-bag-api">github (api)</a> / <a href="http://rebekahheacock.org/2016/10/go-bag/">dev log</a></p>
 					<p>Go Bag lets frequent travelers save their packing lists, whether for once-in-a-lifetime adventures or monthly business trips. Users can add and delete items, search through a database of common travel necessities, check off items as they pack for an upcoming trip, and clone, edit, and delete lists depending on their travel schedule. Go Bag's client-facing application is built in JavaScript/jQuery, HTML5, and SCSS; the API is built in Rails and relies on a PostgreSQL database.</p>
 
-					<p>Curious how I built this? Read my <a href="http://rebekahheacock.org/2016/10/go-bag/">development log.</a></p>
+					<p>Curious about how I built Go Bag? Read my <a href="http://rebekahheacock.org/2016/10/go-bag/">development log.</a></p>
 				</div>
 			</div>
 			<div class="row project-details" id="happening">
 				<div class="col-sm-4">
-					<a href="https://the-spectacles.github.io/event-planner/"><img src="img/happening.png" alt="Happening" class="img-responsive center-block"></a>
+					<a href="https://rhjones.github.io/happening/"><img src="img/happening.png" alt="Happening" class="img-responsive center-block"></a>
 				</div>
 				<div class="col-sm-8">
 					<h2>Happening <small>Online invitations for events big and small</small></h2>
-					<p class="links"><a href="https://the-spectacles.github.io/event-planner/">view</a> / <a href="https://github.com/the-spectacles/event-planner">github (client)</a> / <a href="https://github.com/the-spectacles/event-planner-api">github (api)</a></p>
+					<p class="links"><a href="https://rhjones.github.io/happening/">view</a> / <a href="https://github.com/rhjones/happening">github (client)</a> / <a href="https://github.com/rhjones/happening-api">github (api)</a> / <a href="http://rebekahheacock.org/2016/11/general-assembly-wdi-week-9/">dev log</a></p>
 					<p>Happening is an online event invitation tool. Happening's API is built in Express and relies on MongoDB/Mongoose. The client-facing application is built in JavaScript/jQuery using Handlebars, HTML5, and SCSS. Happening was built in collaboration with <a href="https://github.com/styletabtech">@styletabtech</a> and <a href="https://github.com/JaimeGaribaldo7">@JaimeGaribaldo7</a>.</p>
 				</div>
 			</div>
