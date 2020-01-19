@@ -1,6 +1,6 @@
 # Rebekah Heacock Jones
 
-Boston-based full stack web developer
+Software engineer
 
 Portfolio site: [rhjones.me](http://rhjones.me)
 
